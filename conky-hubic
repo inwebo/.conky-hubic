@@ -1,0 +1,27 @@
+Hubic=$(hubic status)
+
+State=$(echo "$Hubic" | grep State)		
+arr=($State)
+State=${arr[1]}
+	
+Up=$(echo "$Hubic" | grep Up)		
+arr=($Up)
+Up=${arr[1]}
+UpUnit=${arr[2]}
+Down=${arr[6]}
+DownUnit=${arr[7]}
+		
+Account=$(echo "$Hubic" | grep Account)		
+arr=($Account)
+Account=${arr[1]}
+		
+Home=$(echo "$Hubic" | grep Synchronized)		
+arr=($Home)
+Home=${arr[2]}
+		
+Usage=$(echo "$Hubic" | grep Usage)		
+arr=($Usage)
+Usage=${arr[1]}	
+Total=$(echo "${arr[2]}" | cut -d "/" -f 2)
+Perc=$(echo "scale=1; $Usage/$Total*100" | tr ',' '.' | bc )
+echo $Account $Home $State $Up $UpUnit $Down $DownUnit  $Usage $Total $Perc
