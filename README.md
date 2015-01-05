@@ -3,7 +3,9 @@
 
 Hubic integration into conky.
 
-<p align="center">![Demo](https://raw.githubusercontent.com/inwebo/.conky-hubic/master/demo.jpg)</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/inwebo/.conky-hubic/master/demo.jpg"/>
+</p>
 
 ## Requirements
 
