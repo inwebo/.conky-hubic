@@ -3,6 +3,8 @@
 
 Hubic integration into conky.
 
+![Demo](https://raw.githubusercontent.com/inwebo/.conky-hubic/master/demo.jpg)
+
 ## Install
 
 ```
