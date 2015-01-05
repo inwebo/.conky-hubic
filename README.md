@@ -24,3 +24,4 @@ Hubic integration into conky.
 wget https://github.com/inwebo/.conky-hubic/archive/master.zip && mkdir .conky-hubic  && unzip master.zip && rm master.zip && mv .conky-hubic-master .conky-hubic
 ```
 ## Configure
+Copy / Paste .conky-hubicrc in your .conkyrc file, and configure path to bash script.
