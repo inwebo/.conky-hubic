@@ -24,4 +24,14 @@ arr=($Usage)
 Usage=${arr[1]}	
 Total=$(echo "${arr[2]}" | cut -d "/" -f 2)
 Perc=$(echo "scale=1; $Usage/$Total*100" | tr ',' '.' | bc )
+#1  : Account name, <demo@test.fr>
+#2  : Local root folder, /media/Save/hubic
+#3  : Account state, Idle | Busy
+#4  : Upload speed
+#5  : Upload speed unit
+#6  : Download speed
+#7  : Download speed unit
+#8  : Account usage
+#9  : Account total space
+#10 : Account percentage usage
 echo $Account $Home $State $Up $UpUnit $Down $DownUnit  $Usage $Total $Perc
